@@ -1,0 +1,91 @@
+/* for General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* the Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-image {
+    background-color: #C8943F;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-initial {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile-details p {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.edit-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Sections */
+.account-section, .more-options {
+    margin-top: 20px;
+}
+
+.account-section h3, .more-options h3 {
+    margin: 0 0 10px 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.option img {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.option p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}

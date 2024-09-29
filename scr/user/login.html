@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/public/css/auth.css">
+</head>
+<body>
+
+    <div id="header-hero-container"></div>
+
+    <div class="container">
+        <div class="header">
+            
+            <h1>Welcome back!</h1>
+        </div>
+        <div class="profile-picture">
+            <div class="image-placeholder">
+                <span class="initial">Login</span>
+                
+            </div>
+        </div>
+
+        <form class="edit-form">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+
+            <label for="phone">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password">
+
+            <button class="save-button" type="submit">Login</button>
+        </form>
+    </div>
+        <div id="footer"></div>
+</body>
+
+<script>
+    document.getElementById("header").innerHTML = fetch("/scr/layout/header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+    document.getElementById("footer").innerHTML = fetch("/scr/layout/footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+</html>

@@ -1,0 +1,48 @@
+
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+
+        .container p {
+            color: #7b7b7b;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .explore-btn {
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .explore-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+       
