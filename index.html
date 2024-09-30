@@ -1,21 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rent Houses at Affordable rate</title>
+    <meta name="description" content="Connecting you with dream House, Search for the best Affordable and love houses today.">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="./public/css/styles.css" type="text/css" rel="Stylesheet" />
+    <link href="/js-css/css/styles.css" type="text/css" rel="Stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="/js-css/js/main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
-<div id="header"></div>
+<body>
+    <div id="heaer-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">FUDCheckIt</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="/scr/user/login.html">Houses</a></li>
+                        <li><a href="/scr/user/login.html">Login</a></li>
+                        <li><a href="/scr/user/register.html">Register</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
 <body>
     
@@ -69,8 +88,21 @@
         <div class="container">
             <h2>Houses Available</h2>
             <div id="properties-slider" class="slick">
-                <div>
+               <a href="/scr/user/login.html"><div>
                     <img src="./images/34.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">N80,000</p>
+                        <span class="beds">2 beds</span>
+                        <span class="baths">1 baths</span>
+                        <span class="sqft">1,250 sqft.</span>
+                        <address>
+                            Yalwawa, line gidawanka
+                        </address>
+                    </div>
+                </div></a> 
+
+                <div>
+                    <a href="/scr/user/login.html"><img src="./images/34.jpg" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">N80,000</p>
                         <span class="beds">2 beds</span>
@@ -82,20 +114,7 @@
                     </div>
                 </div>
 
-                <div>
-                    <img src="./images/34.jpg" alt="Property 1" />
-                    <div class="property-details">
-                        <p class="price">N80,000</p>
-                        <span class="beds">2 beds</span>
-                        <span class="baths">1 baths</span>
-                        <span class="sqft">1,250 sqft.</span>
-                        <address>
-                            Yalwawa, line gidawanka
-                        </address>
-                    </div>
-                </div>
-
-                <div>
+                <a href="/scr/user/login.html"> <div>
                     <img src="./images/55.jpeg" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">N80,000</p>
@@ -106,9 +125,9 @@
                             Yalwawa, line gidawanka
                         </address>
                     </div>
-                </div>
+                </div></a>
 
-                <div>
+                <a href="/scr/user/login.html"><a href="/scr/user/login.html"><div>
                     <img src="./images/66.jpg" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">N80,000</p>
@@ -119,9 +138,10 @@
                             Yalwawa, line gidawanka
                         </address>
                     </div>
-                </div>
+                </div></a>
 
                 <div>
+                <a href="/scr/user/login.html"></a><div>
                     <img src="./images/55.jpeg" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">N80,000</p>
@@ -132,9 +152,7 @@
                             Yalwawa, line gidawanka
                         </address>
                     </div>
-                </div>
-
-            <button class="rounded">View All Property Listings</button>
+                </div></a>
         </div>
     </section>
 
@@ -208,11 +226,8 @@
     <div id="footer"></div>
     
     <script>
-        document.getElementById("header").innerHTML = fetch("/scr/layout/header.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("header").innerHTML = data);
 
-        document.getElementById("footer").innerHTML = fetch("/scr/layout/footer.html")
+        document.getElementById("footer").innerHTML = fetch("./scr/layout/footer.html")
             .then(response => response.text())
             .then(data => document.getElementById("footer").innerHTML = data);
     </script>

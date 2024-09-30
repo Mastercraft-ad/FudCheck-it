@@ -22,27 +22,22 @@
             </div>
         </div>
 
-        <form class="edit-form">
+        <form action="" method="get" class="edit-form">
             
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter Your Email">
+            <input type="email" id="email" placeholder="Enter Your Email" required>
 
             <label for="phone">Password</label>
-            <input type="password" id="password" placeholder="Enter your Password">
+            <input type="password" id="password" placeholder="Enter your Password" required>
 
-            <button class="save-button" type="submit">Login</button>
+            <button  onclick="goMain()" class="save-button" type="submit">
+                Login
+            </button>
         </form>
+        <br>
+        <p>Don't have account? <a href="/scr/user/register.html">Register Now</a>
     </div>
-        <div id="footer"></div>
+</div>
+<script src="/js-css/js/logreg.js"></script>
 </body>
-
-<script>
-    document.getElementById("header").innerHTML = fetch("/scr/layout/header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-
-    document.getElementById("footer").innerHTML = fetch("/scr/layout/footer.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("footer").innerHTML = data);
-</script>
 </html>

@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
     <link rel="stylesheet" href="/js-css/css/auth.css">
+    <script src="/js-css/js/logreg.js"></script>
 </head>
 <body>
 
     <div id="header-hero-container"></div>
 
     <div class="container">
-
+        <div class="back-button">
+            <button onclick="goBack()">←</button>
+        </div>
         <div class="header">     
             <h1>Find Your Desired House. <br>Register today</h1>
             
         </div>
         <br>        
-        <form class="edit-form">
+        <form action="/" method="get" class="edit-form">
             
             <label for="name">Name</label>
             <input type="name" id="name" placeholder="Full Name">
 
             <label for="email">Email</label>
-            <input type="email" id="name" placeholder="Your Email">
+            <input type="email" id="name" placeholder="Your Email" required>
 
 
             <label for="username">Username</label>
-            <input type="username" id="username" placeholder="Username">
+            <input type="username" id="username" placeholder="Username" required>
 
             <label for="phone">Password</label>
-            <input type="password" id="password" placeholder="Type your Password">
+            <input type="password" id="password" placeholder="Type your Password" required>
 
             <label for="select">Sign-Up As:</label>
         <select id="select">
@@ -38,7 +41,7 @@
             <option value="Advertiser">Agent</option>
         </select>
 
-            <button class="save-button" type="submit">Register</button>
+            <button onclick="goMain()" class="save-button" type="submit">Register</button>
         </form>
         <br>
         <p>Already has an account? <a href="/scr/user/login.html">Login</a>
